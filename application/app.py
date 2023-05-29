@@ -83,5 +83,5 @@ class User(Resource):
         response = UserModel.objects(cpf=cpf)
         if response:
             return jsonify(response)
-        
+
         return {"message": "Usuário não existe na base"}, 400
