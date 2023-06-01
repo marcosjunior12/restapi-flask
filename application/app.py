@@ -84,4 +84,4 @@ class User(Resource):
         if response:
             return jsonify(response)
 
-        return {"message": "Usuário não existe na base"}, 400
+        return {"message": "Usuario nao existe na base"}, 400
